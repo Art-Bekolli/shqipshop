@@ -1,0 +1,94 @@
+
+.page-my-account-data {
+    font-family: Raleway;
+    .content { 
+        max-width: 80%;
+        margin: auto;
+        @include rem(padding-top, 100px);
+        @include rem(padding-bottom, 200px);
+
+        .page-header {
+            display: none;
+        }
+
+        .u-column1{
+            max-width: 40%;
+        }
+        .u-column2{
+            max-width: 40%;
+        }
+
+        .woocommerce-form {
+            background-color: rgba(255, 255, 255, 0.76);
+            backdrop-filter: blur(5px);
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 5px;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            min-height: 300px;
+            .form-row{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p{
+                text-align: center;
+                font-size: 20px;
+            }
+            .password-input {
+                max-width: 270px;
+                width: 100%;
+            }
+
+            .woocommerce-privacy-policy-text{
+                p{
+                font-size: 12px;
+                }
+            }
+
+                a {
+                    color: #4e4e4e;
+                    font-weight: 600;
+                }
+
+            .woocommerce-button {
+                background: linear-gradient(90deg, #E54D4D 0%, #BA3131 100%);
+                color: white;
+                border: none;
+                border-radius: 100px;
+            }
+
+            .woocommerce-Input--text {
+                max-width: 270px;
+                background-color: #d9d9d9;
+                padding: 9px 18px;
+                border-radius: 100px;
+                border: none;
+                width: 100%;
+                display: inline-block;
+
+                &:-webkit-autofill {
+
+                    -webkit-box-shadow: 0 0 0 30px #ebe5e5 inset !important;
+                }
+            }
+        }
+    }
+
+    #customer_login {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include mobile{
+            gap: 0;
+            column-gap: 20px;
+        }
+    }
+}

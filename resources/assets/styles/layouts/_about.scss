@@ -1,0 +1,173 @@
+.template-about {
+    .section-hero {
+        @include rem(height, 840px);
+
+        .info {
+            @include rem(margin-top, 240px);
+            @include rem(margin-left, 655px);
+            box-sizing: border-box;
+            background: rgba(229, 229, 229, 0.79);
+            border: 3px solid #E5E5E5;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2px);
+            border-radius: 15px;
+            @include rem(padding, 53px);
+
+            #title {
+                font-weight: 500;
+                @include rem(font-size, 40px);
+                line-height: 25px;
+                color: #000000;
+                @include rem(margin-bottom, 43px);
+            }
+
+            #subtitle {
+                font-weight: 500;
+                @include rem(font-size, 20px);
+                line-height: 23px;
+                color: #000000;
+                @include rem(margin-bottom, 21px);
+                max-width: 462px;
+
+            }
+
+            #description {
+
+                font-weight: 400;
+                @include rem(font-size, 16px);
+                line-height: 25px;
+                color: #000000;
+                max-width: 462px;
+                width: 100%;
+            }
+        }
+    }
+
+    .section-our-story {
+        @include rem(padding, 80px 0 59px 0);
+
+        .our-story {
+            /* Rectangle 103 */
+            max-width: 1154px;
+            margin: auto;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 28px;
+            @include rem(padding, 70px);
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                max-width: 433px;
+            }
+
+            #title {
+                /* Our story */
+
+
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 38px;
+                /* identical to box height */
+                display: flex;
+                align-items: center;
+
+                color: #FFFFFF;
+
+                @include rem(padding, 18px 22px);
+
+                background: linear-gradient(122.44deg, #E14B4B 20.56%, rgba(123, 41, 41, 0.85) 79.44%);
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+                border-radius: 21px;
+                box-sizing: border-box;
+                width: fit-content;
+
+            }
+
+            #description {
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+
+
+            }
+
+        }
+
+        .send-email {
+            max-width: 1154px;
+            margin: auto;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 28px;
+            @include rem(padding, 28px 65px 40px 65px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include rem(margin-top, 47px);
+            gap: 23px;
+            position: relative;
+            z-index: 2;
+
+            #title {
+
+
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                @include rem(padding, 16px 30px);
+                background: linear-gradient(122.44deg, #E14B4B 20.56%, rgba(123, 41, 41, 0.85) 79.44%);
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+                border-radius: 21px;
+                box-sizing: border-box;
+                width: fit-content;
+
+
+            }
+
+            #subtitle {
+                text-align: center;
+                max-width: 690px;
+            }
+
+            #fields{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            input {
+                background-color: transparent;
+                color: black;
+                border: 3px solid #BE4848;
+                @include rem(padding, 13px 22px);
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #000000;
+                border-radius: 100px;
+                max-width: 317px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+        }
+    }
+}

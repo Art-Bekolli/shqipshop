@@ -1,0 +1,16 @@
+.woocommerce-cart{
+    .wrap{
+    max-width: 70.5%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    h2:before{
+        color: #E54D4D;
+    }
+    .wc-block-components-button{
+        background-color: #E54D4D;
+        font-weight: 600;
+        border-radius: 100px;
+    }
+    }
+} 

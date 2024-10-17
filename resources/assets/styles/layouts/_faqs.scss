@@ -1,0 +1,143 @@
+.section-faqs {
+    #title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        @include rem(padding, 104px 0 24px 0);
+
+    }
+
+    #type {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        @include rem(padding, 160px 0 45px 0);
+
+        &:nth-of-type(1) {
+            padding-top: 54px;
+        }
+    }
+
+    .faq {
+        position: relative;
+        z-index: 2;
+        &#faq1 {
+            background: linear-gradient(122.44deg, #E14B4B 20.56%, rgba(123, 41, 41, 0.85) 79.44%);
+        }
+
+        &#faq2 {
+            background: linear-gradient(118.89deg, #DB4C93 20.07%, rgba(117, 41, 79, 0.85) 79.93%);
+        }
+
+        &#faq3 {
+            background: linear-gradient(121.24deg, #DC4DDC 20.45%, #964196 79.55%);
+        }
+
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        color: white;
+        max-width: 833px;
+        box-sizing: border-box;
+        margin: auto;
+
+        hr {
+            color: white;
+            border: 2px solid white;
+            margin: 0;
+
+            &:last-of-type {
+                display: none;
+            }
+        }
+
+        .question {
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 24px;
+            padding: 23px 59px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            cursor: pointer;
+
+            svg {
+                transition: 0.2s all;
+
+                #vertical {
+                    transition: 0.2s all;
+                }
+            }
+
+            &.active {
+                svg {
+                    transform: rotate(180deg);
+
+                    #vertical {
+                        opacity: 0;
+                    }
+                }
+            }
+
+        }
+
+        #answer {
+            background-color: transparent;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.2s ease-out;
+            padding: 0px 59px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    #unanswered-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        @include rem(padding, 181px 0 0 0);
+    }
+
+    #unanswered-subtitle {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        display: flex;
+        justify-content: center;
+        color: #000000;
+        @include rem(padding, 16px 0 169px 0);
+    }
+#image0{
+position: absolute;
+top: 1%;
+left: -10%;
+}
+#image1{
+position: absolute;
+right: 0;
+}
+#image2{
+position: absolute;
+left: -10%;
+}
+}

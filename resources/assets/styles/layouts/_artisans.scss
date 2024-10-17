@@ -1,0 +1,57 @@
+    .artisans {
+        .section-hero {
+            .background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                .mask{
+                    content: "";
+                    width: 100%;
+                    height: 157px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    border-top-left-radius: 157px;
+                    border-top-right-radius: 157px;
+                    background-color: #f3f3f3;
+                }
+            }
+
+            .content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                z-index: 2;
+                @include rem(padding-top, 120px);
+
+                #title {
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                #subtitle {
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+            .posts{
+                position: relative;
+                z-index: 2;
+                @include rem(padding-top, 81px);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                @include rem(padding-bottom, 104px);
+            }
+        }
+    }

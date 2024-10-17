@@ -1,0 +1,22 @@
+.container{
+    max-width: 70.36%;
+    margin: auto;
+    position: relative;
+    @include not-desktop{
+        max-width: 80%;  
+    }
+}
+
+*{
+    font-family: 'Raleway';
+}
+a{
+    font-family: 'Raleway';
+
+}
+body{
+    background-color: #F4F4F4; 
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 363px;
+}
